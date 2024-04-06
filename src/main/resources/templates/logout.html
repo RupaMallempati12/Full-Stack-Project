@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="default">
+
+<head>
+<title>Customer List</title>
+</head>
+
+<body>
+	<div layout:fragment="content" class="row">
+		<div class="row page-create">
+
+			<h2>
+				<br>
+				<br>
+				<br> Logged Out Successfully <br>
+				<br>
+			</h2>
+			<form th:action="@{/customer/login}" th:object="${login}"
+				method="POST">
+				<span style="color: red; margin: 30px;" th:text="${msg}"></span>
+
+				<table class="tbl-form">
+					<tr>
+						<td><a href="/" class="btn btn-success btn-submit">
+								Login </a></td>
+					</tr>
+
+				</table>
+
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
