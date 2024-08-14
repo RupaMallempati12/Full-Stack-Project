@@ -1,0 +1,70 @@
+body{
+	font-size:12pt;
+}
+
+.tbl-form, .tbl-show, .create-form, .edit-form{
+	margin:auto;
+}
+.tbl-form tr td{
+	padding:5px;
+}
+
+
+.page-create, .page-list, .page-edit, .page-view{
+	text-align: center;
+	margin:auto;
+	min-height:500px;
+}
+.page-create table, .page-edit table, .page-view table{
+	text-align: left;
+}
+
+.page-list table{
+	width:900px;
+	margin:auto;
+}
+
+.page-list table thead{
+	background:black;
+	color:white;
+	height:45px;
+	text-align:center;
+}
+
+.page-list table thead th{
+	text-align:center;
+}
+
+.page-create h2, .page-list h2, .page-edit h2, .page-view h2{
+	color:red;
+	margin:10px auto !important;
+}
+
+.page-view .tbl-show{
+	width:700px;
+	border:1px solid black;
+}
+.page-view .tbl-show tr 	
+{
+	height:40px;
+}
+
+.page-view .tbl-show tr td:first-child	
+{
+	padding-left:40px;
+}
+
+.btn-submit{
+	min-width:150px;
+}
+
+.content-page{
+	background-color:rgb(221, 240, 255);
+	min-height: 600px;
+	background: rgb(241,255,0);
+	background: radial-gradient(circle, rgba(241,255,0,0.9444152661064426) 0%, rgba(251,178,178,1) 100%);
+}
+
+.center{
+	text-align:center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+    <head>
+        <title>Show Staff</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row page-view">
+            <div class="row">
+                <h2>
+                	Staff Details 
+                </h2>
+                
+                <table class="tbl-show" style="width:400px">
+                	<tr><td>ID</td><td th:text="${obj.staffId}"></td ></tr>
+                	<tr><td>Name</td><td th:text="${obj.name}"></td ></tr>
+                	<tr><td>Phone</td><td th:text="${obj.phone}"></td ></tr>
+                	<tr><td>Email</td><td th:text="${obj.email}"></td ></tr>
+                	<tr><td>Address</td><td th:text="${obj.address}"></td ></tr>
+                	<tr><td>Gender</td><td th:text="${obj.gender}"></td ></tr>
+                	<tr><td>Salary</td><td th:text="${obj.salary}"></td ></tr>
+                	<tr><td>Staff Type</td><td th:text="${obj.stafftype}"></td ></tr>
+                </table >
+
+                <form action="/staff/delete">
+                    <input type="hidden" name="id" th:value="${obj.id}" />
+                    <h2><input type="submit" class="btn btn-danger btn-submit" value="Delete" onclick="return confirm('Are you sure?');" />
+                        <a th:href="@{'/staff/edit/' + ${obj.id}}" class="btn btn-warning btn-submit">Edit</a>
+                        <a th:href="@{/staff/list}" class="btn btn-warning btn-submit">View Staffs</a>
+                        </h2>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
