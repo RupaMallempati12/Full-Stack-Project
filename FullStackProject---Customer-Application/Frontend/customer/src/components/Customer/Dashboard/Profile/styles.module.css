@@ -1,0 +1,12 @@
+.address {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.head {
+  margin: 4px;
+}
+
+.profile {
+  padding: 4px;
+}
